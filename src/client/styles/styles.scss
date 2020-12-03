@@ -1,0 +1,37 @@
+@use 'stylesContainer';
+
+$font-stack: 'Noto Sans SC', sans-serif;
+  .container {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+    'hd hd hd'
+    'lf mn rt'
+    'ft ft ft';
+  }
+
+  .text_article {
+    background-color: aqua;
+    color: rgb(125, 16, 139);
+    font-family: $font-stack;
+    flex: 10 0 300px;
+    font-size: 30px;
+  }
+
+  .main {
+    grid-area: mn;
+    text-align: center;
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .topic{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px; 
+    font-size: 40px;
+  }
+
+ 
